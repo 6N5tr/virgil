@@ -2,6 +2,7 @@
 import 'package:virgil/Constant/Constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:virgil/pages/landing_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,18 +12,13 @@ class HomeScreen extends StatefulWidget {
 class HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Second Route"),
+    return MaterialApp(
+     title: "Home",
+      theme: ThemeData(
+        primaryColor: Colors.black,
       ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            // Navigate back to first route when tapped.
-          },
-          child: Text('Go back!'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: LandingPage(),
     );
   }
 }

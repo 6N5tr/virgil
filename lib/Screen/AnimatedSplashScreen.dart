@@ -14,7 +14,7 @@ class AnimatedSplashScreen extends StatefulWidget {
 
 class SplashScreenState extends State<AnimatedSplashScreen>{
   startTime() async {
-    var _duration = new Duration(milliseconds: 3000);
+    var _duration = new Duration(milliseconds: 2970);
     return new Timer(_duration, navigationPage);
   }
 
@@ -23,7 +23,7 @@ class SplashScreenState extends State<AnimatedSplashScreen>{
     Navigator.push(
         context,
         PageTransition(
-            type: PageTransitionType.fade,duration: Duration(milliseconds: 1400), child: HomeScreen()));
+            type: PageTransitionType.fade,duration: Duration(milliseconds: 1000), child: HomeScreen()));
   }
 
 

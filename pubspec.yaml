@@ -49,6 +49,12 @@ flutter:
 
   assets:
     - assets/gifs/Shine_Logo.gif
+    - assets/imagens/Fondo4.jpg
+
+  fonts:
+    - family: Brad
+      fonts:
+        - asset: fonts/BRADHI.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
